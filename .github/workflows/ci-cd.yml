@@ -102,3 +102,14 @@ jobs:
           sleep 10
           curl -f http://localhost:3000 || exit 1
           docker stop test-app
+
+      - name: Get App Runner URL
+        run: |
+          echo "Retrieving App Runner Service URL..."
+          SERVICE_ARN=$(aws apprunner list-services --query "ServiceSummaryList[?ServiceName=='secure-ci-cd-service'].ServiceArn" --output text)
+          if [ -z "$SERVICE_ARN" ]; then
+            echo "App Runner service 'secure-ci-cd-service' not found. Please create it manually as per README."
+          else
+            SERVICE_URL=$(aws apprunner describe-service --service-arn $SERVICE_ARN --query "Service.ServiceUrl" --output text)
+            echo "✅ Application is live at: https://$SERVICE_URL"
+          fi
