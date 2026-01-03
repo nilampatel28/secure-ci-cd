@@ -1,8 +1,8 @@
-# 🚀 Secure CI/CD Pipeline
+# Secure CI/CD Pipeline
 
 A production-ready CI/CD pipeline for Node.js applications, featuring automated security scanning, Docker containerization, and seamless deployment to AWS App Runner.
 
-## 🛠️ Technologies
+##  Technologies
 
 -   **Runtime**: Node.js, Express
 -   **CI/CD**: GitHub Actions
@@ -13,7 +13,7 @@ A production-ready CI/CD pipeline for Node.js applications, featuring automated 
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 Follow these steps to set up the pipeline for your own AWS account.
 
