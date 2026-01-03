@@ -1,3 +1,4 @@
+# CI/CD Pipeline with Security Scanning and AWS ECR Deployment
 name: app
 
 on:
