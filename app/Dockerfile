@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#### Use official Node.js LTS version #
-=======
-## Use official Node.js LTS version
->>>>>>> 4fe30f6 (committed edit)
+# Use official Node.js LTS version
 FROM node:20-alpine
 
 # Set working directory
