@@ -1,4 +1,8 @@
-# Use official Node.js LTS version #
+<<<<<<< HEAD
+#### Use official Node.js LTS version #
+=======
+## Use official Node.js LTS version
+>>>>>>> 4fe30f6 (committed edit)
 FROM node:20-alpine
 
 # Set working directory
@@ -18,3 +22,4 @@ EXPOSE 3000
 
 # Start the application
 CMD ["node", "app.js"]
+
