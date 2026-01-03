@@ -94,7 +94,7 @@ jobs:
       - name: Verify Docker Image (Run & Curl)
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: secure-ci-cd
+          ECR_REPOSITORY: seccure-ci-cd
           IMAGE_TAG: latest
         run: |
           echo "Starting container..."
